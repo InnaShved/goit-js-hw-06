@@ -2,16 +2,16 @@ const value = document.querySelector('#value');
 const IncreaseValueBtn = document.querySelector('[data-action="increment"]');
 const DecreaseValueBtn = document.querySelector('[data-action="decrement"]');
 
+let counterValue = 0; 
+
 function onIncreaseValueBtnClick() {
-    let CurrentValue = Number(value.textContent);
-    CurrentValue += 1;
-    value.textContent = CurrentValue;
+    counterValue += 1;
+    value.textContent = counterValue;
 };
 
 function onDecreaseValueBtnClick() {
-    let CurrentValue = Number(value.textContent);
-    CurrentValue -= 1;
-    value.textContent = CurrentValue;
+    counterValue -= 1;
+    value.textContent = counterValue;
 };
 
 IncreaseValueBtn.addEventListener('click', onIncreaseValueBtnClick);
