@@ -9,7 +9,7 @@ const validator = symboldInputField.getAttribute('data-length');
 console.log(validator);
 
 const handleInputBlur = () => {
-    symboldInputField.value.length >= validator ? symboldInputField.setAttribute('class', 'valid') : symboldInputField.setAttribute('class', 'invalid');
+    symboldInputField.value.length = validator ? symboldInputField.setAttribute('class', 'valid') : symboldInputField.setAttribute('class', 'invalid');
     
 
 };
